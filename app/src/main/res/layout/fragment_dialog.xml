@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dimBlack"
+    android:id="@+id/fragment_dialog">
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_background"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/fragment_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_dialog"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_dialog"
+        app:layout_constraintRight_toRightOf="@+id/fragment_dialog">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/dialog_titleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_titleText"
+                android:textSize="@dimen/text_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:background="@drawable/dialog_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_strokeWidth" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:id="@+id/dialog_promptText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/dialog_inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="horizontal"
+            android:id="@+id/dialog_buttonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="@dimen/spacing_xsmall"
+                android:id="@+id/dialog_cancelButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_marginLeft="@dimen/spacing_xsmall"
+                android:id="@+id/dialog_confirmButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

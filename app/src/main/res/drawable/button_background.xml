@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/aieBlue"/>
+    <corners android:radius="@dimen/button_cornerRadius"/>
+    <stroke android:color="@color/button_border" android:width="@dimen/button_strokeWidth"/>
+    <gradient
+        android:angle="270"
+        android:startColor="@color/button_startColor"
+        android:centerColor="@color/aieBlue"
+        android:endColor="@color/button_endColor"/>
+</shape>
