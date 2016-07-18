@@ -219,4 +219,31 @@
         app:layout_constraintRight_toRightOf="@+id/fragment_settings"
         app:layout_constraintTop_toTopOf="@+id/settings_admin_label" />
 
+    <LinearLayout
+        android:id="@+id/settings_buttonsContainer"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_login"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_settings">
+
+        <Button
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:id="@+id/settings_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:id="@+id/settings_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

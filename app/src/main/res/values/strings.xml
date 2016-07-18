@@ -6,6 +6,7 @@
     <string name="login">Login</string>
     <string name="remember_me">Remember Me</string>
     <string name="ok">Ok</string>
+    <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="server_settings">Server Settings</string>
     <string name="admin_settings">Admin Settings</string>
