@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/settings_serverSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/server_settings"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/fragment_settings" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_strokeWidth"
+        android:background="@drawable/dialog_divider"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_serverSettings" />
+
+    <TextView
+        android:id="@+id/settings_server_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/server_ip"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_serverSettings" />
+
+    <EditText
+        android:id="@+id/settings_server"
+        android:layout_width="@dimen/settings_inputWidth"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_server_label" />
+
+    <TextView
+        android:id="@+id/settings_root_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/root"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_server_label" />
+
+    <EditText
+        android:id="@+id/settings_root"
+        android:layout_width="@dimen/settings_inputWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_root_label" />
+
+    <TextView
+        android:id="@+id/settings_domain_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/domain"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_root_label" />
+
+    <EditText
+        android:id="@+id/settings_domain"
+        android:layout_width="@dimen/settings_inputWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_domain_label" />
+
+    <TextView
+        android:id="@+id/settings_userSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/user_settings"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_domain_label" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_strokeWidth"
+        android:background="@drawable/dialog_divider"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_userSettings" />
+
+    <TextView
+        android:id="@+id/settings_rememberMe_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/remember_me"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_userSettings" />
+
+    <Switch
+        android:id="@+id/settings_rememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_rememberMe_label" />
+
+    <TextView
+        android:id="@+id/settings_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/username"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_rememberMe" />
+
+    <EditText
+        android:enabled="false"
+        android:id="@+id/settings_username"
+        android:layout_width="@dimen/settings_inputWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_username_label" />
+
+    <EditText
+        android:enabled="false"
+        android:id="@+id/settings_password"
+        android:layout_width="@dimen/settings_inputWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:inputType="textPassword"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_password_label" />
+
+    <TextView
+        android:id="@+id/settings_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/password"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_username_label" />
+
+    <TextView
+        android:id="@+id/settings_adminSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/admin_settings"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_password_label" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_strokeWidth"
+        android:background="@drawable/dialog_divider"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_adminSettings" />
+
+    <TextView
+        android:id="@+id/settings_useAdmin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/lock_settings"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_adminSettings" />
+
+    <Switch
+        android:id="@+id/settings_useAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_useAdmin_label" />
+
+    <TextView
+        android:id="@+id/settings_admin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/admin_pin"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_settings"
+        app:layout_constraintTop_toBottomOf="@+id/settings_useAdmin_label" />
+
+    <EditText
+        android:enabled="false"
+        android:id="@+id/settings_admin"
+        android:layout_width="@dimen/settings_inputWidth"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginRight="@dimen/spacing_large"
+        app:layout_constraintRight_toRightOf="@+id/fragment_settings"
+        app:layout_constraintTop_toTopOf="@+id/settings_admin_label" />
+
+</android.support.constraint.ConstraintLayout>

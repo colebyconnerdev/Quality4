@@ -50,6 +50,7 @@
         android:textSize="@dimen/text_large"
         android:layout_width="@dimen/spacing_width"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="@+id/fragment_login"
         app:layout_constraintRight_toRightOf="@+id/fragment_login"
         app:layout_constraintTop_toBottomOf="@+id/login_password_label" />
@@ -63,10 +64,9 @@
         app:layout_constraintTop_toBottomOf="@+id/login_password"/>
 
     <FrameLayout
-        android:id="@+id/login_error"
+        android:id="@+id/login_errorContainer"
         android:layout_width="@dimen/spacing_width"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_height="@dimen/loginError_height"
         android:background="@drawable/error_background"
         app:layout_constraintLeft_toLeftOf="@+id/fragment_login"
         app:layout_constraintRight_toRightOf="@+id/fragment_login"
@@ -75,10 +75,10 @@
 
         <TextView
             android:text="Problem logging in."
-            android:id="@+id/login_password_label"
+            android:id="@+id/login_error"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_small"/>
+            android:layout_height="wrap_content"/>
     </FrameLayout>
 
     <LinearLayout

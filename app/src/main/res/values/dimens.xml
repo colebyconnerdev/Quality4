@@ -18,6 +18,9 @@
     <dimen name="dialog_cornerRadius">10dp</dimen>
     <dimen name="dialog_padding">10dp</dimen>
 
+    <dimen name="loginError_height">64dp</dimen>
+    <dimen name="settings_inputWidth">200dp</dimen>
+
     <dimen name="input_cornerRadius">4dp</dimen>
     <dimen name="input_strokeWidth">1dp</dimen>
     <dimen name="input_padding">4dp</dimen>

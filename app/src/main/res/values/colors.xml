@@ -6,6 +6,7 @@
 
     <color name="aieBlue">#01497C</color>
     <color name="white">#FFFFFF</color>
+    <color name="dimWhite">#44000000</color>
     <color name="dimBlack">#EE000000</color>
     <color name="red">#FF0000</color>
 

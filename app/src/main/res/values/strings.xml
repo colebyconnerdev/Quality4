@@ -7,4 +7,12 @@
     <string name="remember_me">Remember Me</string>
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
+    <string name="server_settings">Server Settings</string>
+    <string name="admin_settings">Admin Settings</string>
+    <string name="user_settings">User Settings</string>
+    <string name="server_ip">Server IP</string>
+    <string name="root">Root</string>
+    <string name="domain">Domain</string>
+    <string name="admin_pin">Admin Pin</string>
+    <string name="lock_settings">Lock Settings</string>
 </resources>
