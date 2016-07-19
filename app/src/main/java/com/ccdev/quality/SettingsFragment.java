@@ -4,7 +4,7 @@ package com.ccdev.quality;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import android.support.v4.app.*;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -139,8 +139,12 @@ public class SettingsFragment extends BackHandledFragment {
 
         String server;
         if ((server = mServerText.getText().toString()).isEmpty()) {
+            Bundle args = new Bundle();
+            args.putString(DialogFragment.TITLE_TEXT, "Missing Field");
+            args.putString(DialogFragment.PROMPT_TEXT, "Server IP cannot be blank.");
+            // TODO left off here
+            DialogFragment dialogFragment = new DialogFragment();
             mServerText.requestFocus();
-            // TODO warning
             return;
         }
 
@@ -203,5 +207,9 @@ public class SettingsFragment extends BackHandledFragment {
         }
 
         mCallback.onSettingsConfirmed();
+    }
+
+    private void showDialog() {
+
     }
 }
